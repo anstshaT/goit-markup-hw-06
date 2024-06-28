@@ -18,6 +18,14 @@ body {
     text-decoration: none;
 }
 
+.top-line .link:hover {
+    color: #404BBF;
+}
+
+.top-line .link:focus{
+    color: #404BBF;
+}
+
 .top-line .logo {
     text-align: left;
     font-family: "Raleway", sans-serif;
@@ -62,7 +70,7 @@ body {
     font-size: 56px;
     line-height: 1.07;
     font-weight: 700;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     text-align: center;
     color: #FFFFFF;
 }
@@ -99,7 +107,9 @@ body {
 .features .li-title {
     color: #2E2F42;
     font-size: 20px;
-    letter-spacing: 0.02ems;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .team {
@@ -120,10 +130,7 @@ body {
     text-transform: capitalize;
 }
 
-.team .designer,
-.developer,
-.marketing,
-.ui-designer {
+.team .team-li {
     background-color: #FFFFFF;
 }
 
@@ -147,7 +154,7 @@ body {
     color: #2E2F42;
     font-size: 36px;
     font-weight: 700;
-    letter-spacing: 0.02ems;
+    letter-spacing: 0.02em;
     text-align: center;
     line-height: 1.11;
     text-transform: capitalize;
@@ -156,7 +163,7 @@ body {
 .portfolio .li-title {
     color: #2E2F42;
     font-size: 20px;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     font-weight: 500;
     line-height: 1.2;
 }
@@ -177,7 +184,7 @@ body {
     text-decoration: none;
 }
 
-.footer .logo span {
+.footer .logo .logo-end {
     color: #F4F4FD;
 }
 
