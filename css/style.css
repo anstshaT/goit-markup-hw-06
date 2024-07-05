@@ -32,6 +32,10 @@ img {
     margin: 0 auto;
 }
 
+.header {
+    border-bottom: 1px solid #E7E9FC
+}
+
 .header-line {
     display: flex;
 }
@@ -40,9 +44,10 @@ img {
     display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
+    align-items: center;
 }
 
-.top-line ul {
+.top-line .header-ul {
     list-style-type: none;
     display: flex;
     gap: 40px;
@@ -104,7 +109,7 @@ img {
     color: #404BBF;
 }
 
-.address ul {
+.address .address-ul {
     list-style-type: none;
     display: flex;
     gap: 40px;
@@ -143,6 +148,7 @@ img {
     margin: 0 auto;
     padding: 16px 32px;
     border: none;
+    min-width: 169px;
 }
 
 .main-page .main-buttom:hover {
@@ -161,16 +167,26 @@ img {
 .features .title {
     font-weight: 500;
     line-height: 1.2;
-    display: none;
 }
 
-.features ul {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.features .features-ul {
     list-style-type: none;
     display: flex;
     gap: 24px;
 }
 
-.features li {
+.features .features-li {
     width: calc((100% - 3 * 24px) / 4);
 }
 
@@ -208,6 +224,7 @@ img {
 
 .team .team-li {
     background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
     padding-bottom: 32px;
     width: calc((100% - 3 * 24px) / 4);
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -226,16 +243,12 @@ img {
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 8px;
-}
-
-.card-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .team .text {   
     font-size: 16px;
+    text-align: center;
 }
 
 .portfolio {
@@ -279,8 +292,7 @@ img {
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
-    padding-top: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
 }
 
 .footer {
@@ -299,6 +311,8 @@ img {
     text-transform: uppercase;
     color: #4D5AE5;
     text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer .logo .logo-end {
@@ -308,5 +322,4 @@ img {
 .footer-text {
     color: #F4F4FD;
     max-width: 264px;
-    margin-top: 16px;
 }
