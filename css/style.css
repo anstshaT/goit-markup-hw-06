@@ -21,6 +21,10 @@ ul, ol {
     padding-left: 0;
 }
 
+img {
+    display: block;
+}
+
 .container {
     width: 1158px;
     padding-left: 15px;
@@ -28,13 +32,20 @@ ul, ol {
     margin: 0 auto;
 }
 
+.header-line {
+    display: flex;
+}
+
 .top-line{
+    display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
 .top-line ul {
     list-style-type: none;
+    display: flex;
+    gap: 40px;
 }
 
 .top-line .link {
@@ -64,6 +75,7 @@ ul, ol {
     text-transform: uppercase;
     color: #4D5AE5;
     text-decoration: none;
+    margin-right: 76px;
 }
 
 .top-line .logo span {
@@ -74,6 +86,7 @@ ul, ol {
     font-style: normal;
     padding-top: 24px;
     padding-bottom: 24px;
+    margin-left: auto;
 }
 
 .address .link {
@@ -93,6 +106,8 @@ ul, ol {
 
 .address ul {
     list-style-type: none;
+    display: flex;
+    gap: 40px;
 }
 
 .main-page {
@@ -127,6 +142,7 @@ ul, ol {
     display: block;
     margin: 0 auto;
     padding: 16px 32px;
+    border: none;
 }
 
 .main-page .main-buttom:hover {
@@ -145,10 +161,17 @@ ul, ol {
 .features .title {
     font-weight: 500;
     line-height: 1.2;
+    display: none;
 }
 
 .features ul {
     list-style-type: none;
+    display: flex;
+    gap: 24px;
+}
+
+.features li {
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .features .li-title {
@@ -160,10 +183,6 @@ ul, ol {
     margin-bottom: 8px;
 }
 
-.features .li-text {
-    max-width: 264px;
-}
-
 .team {
     background-color: #F4F4FD;
     padding-top: 120px;
@@ -172,6 +191,8 @@ ul, ol {
 
 .team ul {
     list-style-type: none;
+    display: flex;
+    gap: 24px;
 }
 
 .team .title {
@@ -187,6 +208,11 @@ ul, ol {
 
 .team .team-li {
     background-color: #FFFFFF;
+    padding-bottom: 32px;
+    width: calc((100% - 3 * 24px) / 4);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team img {
@@ -202,7 +228,13 @@ ul, ol {
     margin-bottom: 8px;
 }
 
-.team .text {
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team .text {   
     font-size: 16px;
 }
 
@@ -213,6 +245,10 @@ ul, ol {
 
 .portfolio ul {
     list-style-type: none;
+    display: flex;
+    gap: 24px;
+    row-gap: 48px;
+    flex-wrap: wrap;
 }
 
 .portfolio .portfolio-title {
@@ -226,10 +262,6 @@ ul, ol {
     margin-bottom: 72px;
 }
 
-.portfolio img {
-    margin-bottom: 32px;
-}
-
 .portfolio .li-title {
     color: #2E2F42;
     font-size: 20px;
@@ -241,6 +273,14 @@ ul, ol {
 
 .portfolio .li-text {
     margin-bottom: 32px;
+}
+
+.portfolio-tit-text {
+    border-bottom: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    padding-top: 32px;
+    padding-left: 16px;
 }
 
 .footer {
