@@ -164,7 +164,7 @@ img {
     padding-top: 120px;
 }
 
-.features .title {
+.features .visually-hidden {
     font-weight: 500;
     line-height: 1.2;
 }
@@ -225,15 +225,10 @@ img {
 .team .team-li {
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
-    padding-bottom: 32px;
     width: calc((100% - 3 * 24px) / 4);
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16),
         0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-
-.team img {
-    margin-bottom: 32px;
 }
 
 .team .li-title {
@@ -242,13 +237,17 @@ img {
     letter-spacing: 0.02em;
     font-weight: 500;
     line-height: 1.2;
-    margin-bottom: 8px;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team .text {   
     font-size: 16px;
     text-align: center;
+}
+
+.team .card-text {
+    padding: 32px 0;
 }
 
 .portfolio {
