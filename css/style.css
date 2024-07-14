@@ -138,11 +138,15 @@ img {
 }
 
 .main-page {
+    max-width: 1440px;
     background-color: #2E2F42;
     padding-bottom: 188px;
     padding-top: 188px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
-    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
 }
 
 .main-page .title {
@@ -173,7 +177,7 @@ img {
     padding: 16px 32px;
     border: none;
     min-width: 169px;
-    transition: background-color 250ms linear;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -213,6 +217,8 @@ img {
     list-style-type: none;
     display: flex;
     gap: 24px;
+    align-items: center;
+    justify-content: center;
 }
 
 .features .features-li {
@@ -220,11 +226,16 @@ img {
 }
 
 .features-li .img-back {
-    padding: 24px 100px;
+    padding-left: 24px;
+    padding-right: 24px;
     background-color: #F4F4FD;
     border: 1px solid #8E8F99;
     border-radius: 4px;
     margin-bottom: 8px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .features .li-title {
@@ -290,21 +301,32 @@ img {
 }
 
 .team .social-li {
-    padding: 12px;
-    height: 40px;
     width: 40px;
-    background-color: #4D5AE5;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 250ms linear;
+    height: 40px;
 }
 
-.team .social-li:hover {
+.team .social-a {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team .social-a:hover {
+    background-color: #404BBF;
+}
+
+.team .social-a:focus {
     background-color: #404BBF;
 }
 
 .team .social-icon {
-    fill: #FFFFFF;
+    fill: #F4F4FD;
 }
 
 .team .card-text {
@@ -336,11 +358,11 @@ img {
 }
 
 .portfolio-li:hover .portfolio-img-text {
-    transform: translateY(0);
+    transform: translateY(0%);
 }
 
 .portfolio-li {
-    transition: box-shadow 350ms linear;
+    transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-li:hover {
@@ -361,7 +383,7 @@ img {
     top:0;
     left: 0;
     transform: translateY(100%);
-    transition: transform 350ms linear;
+    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio .li-title {
@@ -388,9 +410,12 @@ img {
 
 .footer .footer-items {
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
 }
 
+.footer .logo-portfolio {
+    margin-right: 120px;
+}
 .footer .logo {
     text-align: left;
     font-family: "Raleway", sans-serif;
@@ -412,6 +437,7 @@ img {
 .footer .footer-text {
     color: #F4F4FD;
     max-width: 264px;
+    font-weight: 500;
 }
 
 .footer .footer.links {
@@ -425,6 +451,7 @@ img {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
+    font-weight: 500;
 }
 
 .footer .footer-social {
@@ -434,16 +461,27 @@ img {
 }
 
 .footer .social-li {
-    padding: 8px;
     height: 40px;
     width: 40px;
-    background-color: #4D5AE5;
-    border-radius: 50px;
     cursor: pointer;
-    transition: background-color 250ms linear;
 }
 
-.footer .social-li:hover {
+.footer .social-li-a {
+    height: 100%;
+    width: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .social-li-a:hover {
+    background-color: #31D0AA;
+}
+
+.footer .social-li-a:focus {
     background-color: #31D0AA;
 }
 
