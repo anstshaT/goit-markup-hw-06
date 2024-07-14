@@ -33,7 +33,7 @@ img {
 }
 
 .header {
-    border-bottom: 1px solid #E7E9FC
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-line {
@@ -51,6 +51,7 @@ img {
     list-style-type: none;
     display: flex;
     gap: 40px;
+    position: relative;
 }
 
 .top-line .link {
@@ -69,6 +70,17 @@ img {
 
 .top-line .link:focus{
     color: #404BBF;
+}
+
+.top-line .link:focus::after {
+    background-color: #404BBF;
+    display: block;
+    width: 48px;
+    height: 4px;
+    content: "";
+    border-radius: 2px;
+    position: absolute;
+    bottom: -24px;
 }
 
 .top-line .logo {
@@ -121,7 +133,8 @@ img {
     background-color: #2E2F42;
     padding-bottom: 188px;
     padding-top: 188px;
-    background-image: url(/images/people_office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
+    
 }
 
 .main-page .title {
@@ -153,6 +166,7 @@ img {
     border: none;
     min-width: 169px;
     transition: background-color 250ms linear;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .main-page .main-buttom:hover {
@@ -195,6 +209,14 @@ img {
 
 .features .features-li {
     width: calc((100% - 3 * 24px) / 4);
+}
+
+.features-li .img-back {
+    padding: 24px 100px;
+    background-color: #F4F4FD;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 .features .li-title {
@@ -251,6 +273,30 @@ img {
 .team .text {   
     font-size: 16px;
     text-align: center;
+    margin-bottom: 8px;
+}
+
+.team .social {
+    display: flex;
+    justify-content: center;
+}
+
+.team .social-li {
+    padding: 12px;
+    height: 40px;
+    width: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 250ms linear;
+}
+
+.team .social-li:hover {
+    background-color: #404BBF;
+}
+
+.team .social-icon {
+    fill: #FFFFFF;
 }
 
 .team .card-text {
@@ -332,6 +378,11 @@ img {
     padding-bottom: 100px;
 }
 
+.footer .footer-items {
+    display: flex;
+    align-items: flex-start;
+}
+
 .footer .logo {
     text-align: left;
     font-family: "Raleway", sans-serif;
@@ -350,7 +401,44 @@ img {
     color: #F4F4FD;
 }
 
-.footer-text {
+.footer .footer-text {
     color: #F4F4FD;
     max-width: 264px;
+}
+
+.footer .footer.links {
+    max-width: 208px;
+}
+
+.footer .social-text {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer .footer-social {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+.footer .social-li {
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 250ms linear;
+}
+
+.footer .social-li:hover {
+    background-color: #31D0AA;
+}
+
+.footer .icon-links {
+    fill: #FFFFFF;
 }
