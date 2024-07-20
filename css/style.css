@@ -483,10 +483,10 @@ img {
     background-color: #31D0AA;
 }
 
-.footer .social-li-a:hover {
+.footer .social-li-a:focus {
     background-color: #31D0AA;
 }
 
-.footer .icon-links {
+.footer .social-icon {
     fill: #F4F4FD;
 }
