@@ -490,3 +490,90 @@ img {
 .footer .social-icon {
     fill: #F4F4FD;
 }
+
+.modal-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2e2f4299;
+    left: 0;
+    top: 0;
+}
+
+.modal {
+    padding: 24px;
+    width: 408px;
+    min-height: 584px;
+    background-color: #FCFCFC;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    fill: #2E2F42;
+}
+
+.top-button {
+   margin-left: auto;
+   margin-bottom: 24px;
+   background-repeat: 4px;
+}
+
+.modal-title {
+    text-align: center;
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.form-input {
+    display: inline-block;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 4px;
+    padding-left: 38px;
+    border: 1px solid #2e2f4299;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    font-family: Roboto, sans-serif;
+}
+
+.form-svg {
+    position: absolute;
+    fill: #2E2F42;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-place {
+    position: relative;
+}
+
+.bottom-button {
+    padding: 16px 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    border-radius: 4px;
+    margin-top: 24px;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+}
