@@ -422,8 +422,8 @@
             <div class="footer-form">
                     <p class="social-text subscribe-title">Subscribe</p>
                     <form class="footer-form-items">
-                            <label for="email" class="form-label"></label>
-                                <input type="email" name="user-email" id="email" class="footer-input" placeholder="E-mail"/>
+                            <label for="email" class="form-label">
+                                <input type="email" name="user-email" id="email" class="footer-input" placeholder="E-mail"/></label>
                                 <button type="button" class="footer-button">Subscribe 
                                     <svg class="footer-button-icon" width="24" height="24">
                                         <use href="./images/icons.svg#icon-icon-send"></use>
@@ -477,9 +477,11 @@
                     </div>
                 </div>
 
-                <label class="label" for="user-comment">Comment</label>
-                <textarea id="user-comment" name="user-comment" class="form-comment" placeholder="Text input"></textarea>
-
+                <div class="comment-items">
+                    <label class="label" for="user-comment">Comment</label>
+                    <textarea id="user-comment" name="user-comment" class="form-comment" placeholder="Text input"></textarea>
+    
+                </div>
                 <div class="checkbox-area">
                     <input type="checkbox" name="user-privacy" id="user-privacy" class="check-privacy visually-hidden" value="true"/>
                     <label for="user-privacy" class="check-text">
