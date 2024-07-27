@@ -627,11 +627,11 @@ img {
     background-color: #404BBF;
 }
 
-.close-icon:hover {
+.top-button:hover .close-icon {
     fill: #ffffff;
 }
 
-.close-icon:focus {
+.top-button:focus .close-icon {
     fill: #ffffff;
 }
 
@@ -749,6 +749,7 @@ img {
 }
 
 .checkbox-span {
+    display: inline-flex;
     display: inline-flex;
     width: 16px;
     height: 16px;
