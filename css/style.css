@@ -26,9 +26,9 @@ img {
 }
 
 .container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin: 0 auto;
 }
 
@@ -191,8 +191,10 @@ img {
 }
 
 .features{
-    padding-bottom: 120px;
-    padding-top: 120px;
+    /* padding-bottom: 120px;
+    padding-top: 120px; */
+    padding-bottom: 96px;
+    padding-top: 96px;
 }
 
 .features .title {
@@ -220,10 +222,11 @@ img {
     gap: 24px;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .features .features-li {
-    width: calc((100% - 3 * 24px) / 4);
+    /* width: calc((100% - 3 * 24px) / 4); */
 }
 
 .features-li .img-back {
@@ -232,30 +235,44 @@ img {
     border-radius: 4px;
     margin-bottom: 8px;
     height: 112px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
 
 .features .li-title {
     color: #2E2F42;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 36px;
     letter-spacing: 0.02em;
-    font-weight: 500;
+    /* font-weight: 500; */
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: 8px;
+    text-align: center;
+}
+
+.features .li-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 .team {
     background-color: #F4F4FD;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .team ul {
     list-style-type: none;
     display: flex;
-    gap: 24px;
+    /* gap: 24px; */
+    gap: 72px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .team .title {
@@ -272,7 +289,7 @@ img {
 .team .team-li {
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
-    width: calc((100% - 3 * 24px) / 4);
+    /* width: calc((100% - 3 * 24px) / 4); */
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16),
         0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -297,6 +314,7 @@ img {
 .team .social {
     display: flex;
     justify-content: center;
+    gap: 24px;
 }
 
 .team .social-li {
@@ -333,8 +351,8 @@ img {
 }
 
 .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .portfolio ul {
@@ -405,20 +423,28 @@ img {
 
 .footer {
     background-color: #2E2F42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .footer .footer-items {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer .logo-portfolio {
-    margin-right: 120px;
+    /* margin-right: 120px; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 .footer .logo {
-    text-align: left;
+    text-align: center;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -428,7 +454,7 @@ img {
     color: #4D5AE5;
     text-decoration: none;
     display: inline-block;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
 }
 
 .footer .logo .logo-end {
@@ -437,8 +463,10 @@ img {
 
 .footer .footer-text {
     color: #F4F4FD;
-    max-width: 264px;
+    /* max-width: 264px; */
+    max-width: 288px;
     font-weight: 500;
+    margin-bottom: 72px;
 }
 
 .footer .footer-links {
@@ -453,16 +481,18 @@ img {
     color: #FFFFFF;
     margin-bottom: 16px;
     font-weight: 500;
+    text-align: center;
 }
 
 .subscribe-title {
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
 .footer .footer-social {
     list-style: none;
     display: flex;
     gap: 16px;
+    margin-bottom: 72px;
 }
 
 .footer .social-li {
@@ -495,9 +525,12 @@ img {
 
 .footer-form-items {
     display: flex;
-    flex-direction: row;
-    gap: 24px;
-    margin-left: 55px;
+    /* flex-direction: row; */
+    /* gap: 24px; */
+    gap: 16px;
+    flex-wrap: wrap;
+    /* margin-left: 55px; */
+    justify-content: center;
 }
 
 
@@ -506,7 +539,8 @@ img {
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
-    width: 264px;
+    /* width: 264px; */
+    width: 288px;
     height: 40px;
     padding: 8px 16px;
     letter-spacing: 0.04em;
