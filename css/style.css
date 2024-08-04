@@ -139,10 +139,13 @@ img {
 }
 
 .main-page {
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    max-width: 320px;
     background-color: #2E2F42;
-    padding-bottom: 188px;
-    padding-top: 188px;
+    /* padding-bottom: 188px;
+    padding-top: 188px; */
+    padding-top: 72px;
+    padding-bottom: 72px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -151,15 +154,18 @@ img {
 }
 
 .main-page .title {
-    font-size: 56px;
+    /* font-size: 56px; */
+    font-size: 36px;
     line-height: 1.07;
     font-weight: 700;
     letter-spacing: 0.02em;
     text-align: center;
     color: #FFFFFF;
-    max-width: 496px;
+    /* max-width: 496px; */
+    max-width: 216px;
     margin: 0 auto;
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
+    margin-bottom: 72px;
 }
 
 .main-page .main-buttom {
@@ -465,7 +471,8 @@ img {
     color: #F4F4FD;
     /* max-width: 264px; */
     max-width: 288px;
-    font-weight: 500;
+    /* font-weight: 500; */
+    font-weight: 400;
     margin-bottom: 72px;
 }
 
