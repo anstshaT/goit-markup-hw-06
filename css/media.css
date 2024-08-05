@@ -1,0 +1,39 @@
+/* Tab screen */
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 0 auto;
+    }
+
+    .header-line {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .top-line .header-ul {
+        display: flex;
+    }
+
+    .address .link {
+        display: block;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .address .address-ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+/* Comp screen */
+@media screen and (min-width: 1440px) {
+
+}
+
