@@ -2,9 +2,6 @@
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
-        padding-left: 16px;
-        padding-right: 16px;
-        margin: 0 auto;
     }
 
     .header-line {
@@ -20,6 +17,10 @@
         display: flex;
     }
 
+    .top-line .logo {
+        margin-right: 109px;
+    }
+
     .address .link {
         display: block;
         padding-bottom: 0;
@@ -30,10 +31,171 @@
         flex-direction: column;
         gap: 12px;
     }
+
+    .main-page {
+        max-width: 768px;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-tab.jpg);
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+            .main-page {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-tab-2x.jpg);
+            }
+    }
+
+    .main-page .title {
+        font-size: 56px;
+        margin-bottom: 36px;
+        max-width: 496px;
+    }
+
+    .features .features-li {
+        width: calc((100% - 1 * 24px) / 2);
+    }
+
+    .features .li-title {
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .team ul {
+        gap: 24px;
+        row-gap: 64px;
+    }
+
+    .portfolio ul {
+        row-gap: 72px;
+    }
+
+    .portfolio-li {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .footer .logo-portfolio {
+        flex-direction: column;
+    }
+
+    .footer .logo, .footer .social-text {
+        text-align: left;
+    }
 }
 
 /* Comp screen */
 @media screen and (min-width: 1440px) {
+    .container {
+        width: 1128px;
+    }
+
+    .top-line .logo {
+        margin-right: 76px;
+    }
+
+    .address .address-ul {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .main-page {
+            max-width: 1440px;
+            padding-top: 188px;
+            padding-bottom: 188px;
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-comp.jpg);
+        
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 2dppx),
+                (min-resolution: 192dpi) {
+                    .main-page {
+                        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-comp-2x.jpg);
+                    }
+    }
+
+    .main-page .title {
+        margin-bottom: 48px;
+    }
+
+    .features {
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
+
+    .features .features-li {
+        width: calc((100% - 3 * 24px) / 4);
+    }
+
+    .features .features-ul {
+        flex-wrap: nowrap;
+    }
+
+    .features-li .img-back {
+        display: flex;
+    }
+
+    .features .li-title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .features .li-text {
+        font-weight: 400;
+    }
+
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team ul {
+        flex-wrap: nowrap;
+    }
+
+    .portfolio ul {
+        row-gap: 48px;
+    }
+    
+    .portfolio-li {
+        width: calc((100% - 2 * 24px) / 3);
+    }
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer .footer-items {
+        flex-wrap: nowrap;
+    }
+
+    .footer .logo-portfolio {
+        margin-right: 120px;
+    }
+
+    .footer .footer-text {
+        max-width: 264px;
+        margin-bottom: 0;
+    }
+
+    .footer-form-items {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .footer-form-items .footer-input {
+        width: 264px;
+    }
+
+    .form-all-items {
+        margin-left: 80px;
+    }
+
+    .footer .footer-social {
+        margin-bottom: 0;
+    }
 
 }
-

@@ -116,7 +116,7 @@
 
                 <ul class="team-ul">
                     <li class="team-li">
-                        <img src="./images/card_1.jpg" alt="Man with beard in a shirt" width="264" height="260" />
+                        <img srcset="./images/card_1.jpg 1x, ./images/card_1_2x.jpg 2x" src="./images/card_1.jpg" alt="Man with beard in a shirt" width="264" height="260" />
                         <div class="card-text">
                             <h3 class="li-title">Mark Guerrero</h3>
                             <p class="text">Product Designer</p>
@@ -159,7 +159,7 @@
                     </li>
 
                     <li class="team-li">
-                        <img src="./images/card_2.jpg" alt="Man with brown hair in a shirt" width="264" height="260" />
+                        <img srcset="./images/card_2.jpg 1x, ./images/card_2_2x.jpg 2x" src="./images/card_2.jpg" alt="Man with brown hair in a shirt" width="264" height="260" />
                         <div class="card-text">
                             <h3 class="li-title">Tom Ford</h3>
                             <p class="text">Frontend Developer</p>
@@ -201,7 +201,7 @@
                     </li>
 
                     <li class="team-li">
-                        <img src="./images/card_3.jpg" alt="Young woman in a pink sweater" width="264" height="260" />
+                        <img srcset="./images/card_3.jpg 1x, ./images/card_3_2x.jpg 2x" src="./images/card_3.jpg" alt="Young woman in a pink sweater" width="264" height="260" />
                         <div class="card-text">
                             <h3 class="li-title">Camila Garcia</h3>
                             <p class="text">Marketing</p>
@@ -243,7 +243,7 @@
                     </li>
 
                     <li class="team-li">
-                        <img src="./images/card_4.jpg" alt="Man with brown hair in a gray T-shirt" width="264"
+                        <img srcset="./images/card_4.jpg 1x, ./images/card_4_2x.jpg 2x" src="./images/card_4.jpg" alt="Man with brown hair in a gray T-shirt" width="264"
                             height="260" />
                         <div class="card-text">
                             <h3 class="li-title">Daniel Wilson</h3>
@@ -295,7 +295,12 @@
                 <ul class="portfolio-ul">
                     <li class="portfolio-li">
                         <div class="portfolio-img">
-                            <img src="./images/img_1.jpg" alt="Design of Banking App" width="288" height="280" /> 
+                            <picture>
+                                <source media="(min-width: 1440px)"" srcset="./images/img_1_desk.jpg 1x, ./images/img_1_desk_2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/img_1_tab.jpg 1x, ./images/img_1_tab_2x.jpg 2x">
+                                <source media="(max-width: 768px)" srcset="./images/img_1_mob.jpg 1x, ./images/img_1_mob_2x.jpg 2x">
+                                <img src="./images/img_1.jpg" alt="Design of Banking App" width="360" /> 
+                            </picture>
                             <p class="portfolio-img-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App
                             </p>
@@ -308,7 +313,12 @@
 
                     <li class="portfolio-li">
                         <div class="portfolio-img">
-                            <img src="./images/img_2.jpg" alt="Phone scans the QR-code from the terminal" width="288" height="280" />
+                            <picture>
+                                <source media="(min-width: 1440px)"" srcset=" ./images/img_2_desk.jpg 1x, ./images/img_2_desk_2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/img_2_tab.jpg 1x, ./images/img_2_tab_2x.jpg 2x">
+                                <source media="(max-width: 768px)" srcset="./images/img_2_mob.jpg 1x, ./images/img_2_mob_2x.jpg 2x">
+                                <img src="./images/img_2.jpg" alt="Phone scans the QR-code from the terminal" width="360"/>
+                            </picture>
                             <p class="portfolio-img-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App
                                  · Exotic Fruit Ecommerce App · Cloud Storage App
                             </p>
@@ -321,8 +331,12 @@
 
                     <li class="portfolio-li">
                         <div class="portfolio-img">
-                            <img src="./images/img_3.jpg" alt="Design of meditation App on the screen of the phone and laptop"
-                               width="288" height="280" />
+                            <picture>
+                                <source media="(min-width: 1440px)"" srcset=" ./images/img_3_desk.jpg 1x, ./images/img_3_desk_2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/img_3_tab.jpg 1x, ./images/img_3_tab_2x.jpg 2x">
+                                <source media="(max-width: 768px)" srcset="./images/img_3_mob.jpg 1x, ./images/img_3_mob_2x.jpg 2x">
+                                <img src="./images/img_3.jpg" alt="Design of meditation App on the screen of the phone and laptop" width="360" />
+                            </picture>
                             <p class="portfolio-img-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                             Cloud Storage App
                             </p>
@@ -335,8 +349,13 @@
 
                     <li class="portfolio-li">
                         <div class="portfolio-img">
-                            <img src="./images/img_4.jpg" alt="Taxi driver id driving the car" width="288" height="280" />
-                            <p class="portfolio-img-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
+                            <picture>
+                                <source media="(min-width: 1440px)"" srcset=" ./images/img_4_desk.jpg 1x, ./images/img_4_desk_2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/img_4_tab.jpg 1x, ./images/img_4_tab_2x.jpg 2x">
+                                <source media="(max-width: 768px)" srcset="./images/img_4_mob.jpg 1x, ./images/img_4_mob_2x.jpg 2x">
+                                <img src="./images/img_4.jpg" alt="Taxi driver id driving the car" width="360"/>
+                            </picture>
+                           <p class="portfolio-img-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                             Cloud Storage App
                             </p>
                         </div>
@@ -348,7 +367,13 @@
 
                     <li class="portfolio-li">
                         <div class="portfolio-img">
-                            <img src="./images/img_5.jpg" alt="Examples of screen illustration with the moon" width="288" height="280" />
+                            <picture>
+                                <source media="(min-width: 1440px)"" srcset=" ./images/img_5_desk.jpg 1x, ./images/img_5_desk_2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/img_5_tab.jpg 1x, ./images/img_5_tab_2x.jpg 2x">
+                                <source media="(max-width: 768px)" srcset="./images/img_5_mob.jpg 1x, ./images/img_5_mob_2x.jpg 2x">
+                                <img src="./images/img_5.jpg" alt="Examples of screen illustration with the moon" width="360" />
+                            </picture>
+                            
                             <p class="portfolio-img-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                             Cloud Storage App
                             </p>
@@ -361,8 +386,14 @@
 
                     <li class="portfolio-li">
                         <div class="portfolio-img">
-                            <img src="./images/img_6.jpg" alt="The girl with headphones is smiling while looking at her phone"
-                               width="288" height="280" />
+                            <picture>
+                                <source media="(min-width: 1440px)"" srcset=" ./images/img_6_desk.jpg 1x, ./images/img_6_desk_2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="./images/img_6_tab.jpg 1x, ./images/img_6_tab_2x.jpg 2x">
+                                <source media="(max-width: 768px)" srcset="./images/img_6_mob.jpg 1x, ./images/img_6_mob_2x.jpg 2x">
+                                <img src="./images/img_6.jpg" alt="The girl with headphones is smiling while looking at her phone"
+                               width="360"/>
+                            </picture>
+                           
                             <p class="portfolio-img-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                             Cloud Storage App
                             </p>
@@ -425,17 +456,19 @@
             </div>
 
             <div class="footer-form">
-                    <p class="social-text subscribe-title">Subscribe</p>
-                    <form class="footer-form-items">
-                            <label for="email" class="form-label">
-                                <input type="email" name="user-email" id="email" class="footer-input" placeholder="E-mail"/>
-                            </label>
-                                <button type="submit" class="footer-button">Subscribe 
-                                    <svg class="footer-button-icon" width="24" height="24">
-                                        <use href="./images/icons.svg#icon-icon-send"></use>
-                                    </svg>
-                                </button>
-                    </form>
+                    <div class="form-all-items">
+                        <p class="social-text subscribe-title">Subscribe</p>
+                        <form class="footer-form-items">
+                                <label for="email" class="form-label">
+                                    <input type="email" name="user-email" id="email" class="footer-input" placeholder="E-mail"/>
+                                </label>
+                                    <button type="submit" class="footer-button">Subscribe 
+                                        <svg class="footer-button-icon" width="24" height="24">
+                                            <use href="./images/icons.svg#icon-icon-send"></use>
+                                        </svg>
+                                    </button>
+                        </form>
+                    </div>
             </div>
         </div>
 
@@ -491,13 +524,14 @@
 
                 <div class="checkbox-area">
                     <input type="checkbox" name="user-privacy" id="user-privacy" class="check-privacy visually-hidden" value="true"/>
-                        <label for="user-privacy" class="check-text">
-                            <span class="checkbox-span">
-                                <svg class="icon-check" width="10" height="8">
-                                    <use href="./images/icons.svg#icon-check"></use>
-                                </svg>
-                            </span>I accept the terms and conditions of the <a href="" class="span-link">Privacy Policy</a>
-                        </label>
+                            <label for="user-privacy" class="check-text">
+                                <span class="checkbox-span">
+                                    <svg class="icon-check" width="10" height="8">
+                                        <use href="./images/icons.svg#icon-check"></use>
+                                    </svg>
+                                </span>
+                                <div class="div-label">I accept the terms and conditions of the <a href="" class="span-link">Privacy Policy</a></div>
+                            </label>
                 </div>
            
                 <button type="button" class="bottom-button">Send</button>
