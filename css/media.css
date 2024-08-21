@@ -82,6 +82,19 @@
     .footer .logo, .footer .social-text {
         text-align: left;
     }
+
+    .modal {
+        width: 408px;
+        min-height: 584px;
+    }
+
+    .check-text {
+        justify-content: left;
+    }
+
+    .div-label {
+        display: block;
+    }
 }
 
 /* Comp screen */
@@ -123,13 +136,14 @@
         padding-bottom: 120px;
         padding-top: 120px;
     }
+    
+    .features .features-ul {
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
 
     .features .features-li {
         width: calc((100% - 3 * 24px) / 4);
-    }
-
-    .features .features-ul {
-        flex-wrap: nowrap;
     }
 
     .features-li .img-back {
