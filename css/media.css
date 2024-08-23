@@ -100,9 +100,9 @@
 }
 
 /* Comp screen */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .container {
-        width: 1128px;
+        width: 1158px;
     }
 
     .top-line .logo {
