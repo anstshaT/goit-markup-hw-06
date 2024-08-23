@@ -255,7 +255,7 @@ img {
     list-style-type: none;
     display: flex;
     gap: 24px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     flex-wrap: wrap;
 }
