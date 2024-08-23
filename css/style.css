@@ -170,6 +170,16 @@ img {
     z-index: 1;
     overflow: auto;
     padding: 72px 16px 40px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.mob-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .mob-top-button {
@@ -229,7 +239,7 @@ img {
     color: #404BBF;
 }
 
-.address-ul {
+.mob-address-ul {
     display: flex;
     gap: 24px;
     flex-direction: column;

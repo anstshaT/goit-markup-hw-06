@@ -15,6 +15,10 @@
         display: none;
     }
 
+    .mob-menu {
+        display: none;
+    }
+
     .top-line .header-ul {
         display: flex;
     }
